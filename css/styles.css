@@ -673,3 +673,99 @@ body {
         padding-left: 1.5rem;
     }
 }
+/* ===== MEJORAS VISUALES FRPN CONSULTING ===== */
+
+/* Hero más profesional */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #1e3a8a 50%,
+        #0f766e 100%
+    );
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 0 3px 15px rgba(0,0,0,0.25);
+}
+
+.hero p {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Tarjetas más elegantes */
+.service-card,
+.achievement-card {
+    border: 1px solid rgba(37,99,235,0.08);
+}
+
+.service-card:hover,
+.achievement-card:hover {
+    transform: translateY(-12px);
+}
+
+/* Títulos de sección */
+.services h2,
+.experience h2,
+.achievements h2,
+.contact h2,
+.about h2 {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.services h2::after,
+.experience h2::after,
+.achievements h2::after,
+.contact h2::after,
+.about h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+/* Estadísticas más modernas */
+.stat {
+    transition: all .3s ease;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+}
+
+/* Footer premium */
+.footer {
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1f2937
+    );
+}
+
+/* Scrollbar moderna */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    border-radius: 10px;
+}
